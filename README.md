@@ -7,7 +7,7 @@ npm install
 
 ## Usage
 
-#### node
+### node
 ```json
 // package.json
 "scripts": {
@@ -102,7 +102,7 @@ Form provides feedback upon successful form submission
 A POST Request is made upon form submission to the provided endpoint with a JSON body containing the user-provided information and returns a 201 status code.
 
 ```
-//Client
+// Client
   handleSubmit (e) {
     e.preventDefault();
 
@@ -114,15 +114,17 @@ A POST Request is made upon form submission to the provided endpoint with a JSON
     .then(this.props.handleSubmit())
   }
   
- //Server
- app.post('/postForm', (req, res) => {
-  const Url = 'https://frontend-take-home.fetchrewards.com/form';
-  axios({
-    method: 'post',
-    url: Url,
-    data: req.body
+// Server
+  app.post('/postForm', (req, res) => {
+    const Url = 'https://frontend-take-home.fetchrewards.com/form';
+    axios({
+      method: 'post',
+      url: Url,
+      data: req.body
+    })
+    .then(result => res.sendStatus(201))
+    .catch(err => res.send(err))
   })
-  .then(result => res.sendStatus(201))
-  .catch(err => res.send(err))
-})
 ```
+<img width="353" alt="image" src="https://user-images.githubusercontent.com/96090461/209009663-f5a50dc6-261c-48a7-94d9-7d803c459baa.png">
+<img width="676" alt="Screen Shot 2022-12-21 at 1 54 33 PM" src="https://user-images.githubusercontent.com/96090461/209009603-82c45ca4-f085-4f59-a27d-f055da7acb72.png">
