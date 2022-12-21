@@ -91,11 +91,11 @@ A GET Request upon loading is made to the provided endpoint to retrieve the opti
 
 User is unable to submit the form without completing the entire form
 
-<img width="364" alt="Screen Shot 2022-12-21 at 1 37 53 PM" src="https://user-images.githubusercontent.com/96090461/209007340-77ae8d1b-c574-4c80-9c3c-8bc94e4924fd.png">
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/96090461/209012276-288abb11-c8f2-4543-9bd6-c01eb174c488.png">
 
 Form provides feedback upon successful form submission
 
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/96090461/209007624-d75b3ff8-b306-4fe9-a061-e04381825104.png">
+<img width="497" alt="image" src="https://user-images.githubusercontent.com/96090461/209012611-eb152709-787c-40cd-a8b3-f2bcedbc6dec.png">
 
 ### POST Request
 
